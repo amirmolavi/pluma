@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}
+
+\title{Gene Expression Analysis Report}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report presents the analysis of gene expression data. The data includes information on different genes and their expression levels across multiple samples. The analysis involves calculating the mean expression level for each gene and visualizing the data using bar charts and line plots.
+
+\section{Data Overview}
+The original data consists of gene expression levels across samples. A preview of the original data is shown in Table \ref{tab:original_data}, where each row represents a gene and each column represents a sample.
+
+\begin{table}[H]
+\centering
+\caption{Original Data}
+\label{tab:original_data}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Gene & Sample 1 & Sample 2 & Sample 3 & Sample 4 & Sample 5 \\ \hline
+Gene A & 10 & 15 & 20 & 25 & 30 \\ \hline
+Gene B & 5 & 8 & 12 & 18 & 22 \\ \hline
+Gene C & 3 & 6 & 9 & 12 & 15 \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Mean Expression Calculation}
+To analyze the data, the mean expression level for each gene was calculated and added as a new column. The data was then sorted based on the mean expression level, as shown in Table \ref{tab:mean_expression_data}.
+
+\begin{table}[H]
+\centering
+\caption{Data with Mean Expression}
+\label{tab:mean_expression_data}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Gene & Sample 1 & Sample 2 & Sample 3 & Sample 4 & Sample 5 & Mean Expression \\ \hline
+Gene A & 10 & 15 & 20 & 25 & 30 & 20 \\ \hline
+Gene B & 5 & 8 & 12 & 18 & 22 & 13.0 \\ \hline
+Gene C & 3 & 6 & 9 & 12 & 15 & 9.0 \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Mean Gene Expression Levels}
+Figure \ref{fig:mean_expression_plot} shows a bar chart of the mean expression levels for each gene. The x-axis represents genes, and the y-axis represents the mean expression level. The genes are sorted in descending order of mean expression level.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{mean_expression_plot.png}
+\caption{Mean Gene Expression Levels}
+\label{fig:mean_expression_plot}
+\end{figure}
+
+\section{Expression Levels Across Samples}
+To visualize the expression levels across samples for the top gene (highest mean expression level), a line plot was created, as shown in Figure \ref{fig:expression_across_samples_plot}. The x-axis represents samples, and the y-axis represents the expression level. The green line represents the expression levels of the top gene across samples.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{expression_across_samples_plot.png}
+\caption{Expression Levels of Gene A Across Samples}
+\label{fig:expression_across_samples_plot}
+\end{figure}
+
+\section{Conclusion}
+The analysis of gene expression data revealed insights into the mean expression levels of different genes and the variation in expression levels across samples. Further analysis and interpretation can provide valuable information for understanding gene regulation and function.
+
+\end{document}
